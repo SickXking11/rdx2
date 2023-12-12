@@ -156,7 +156,7 @@ class Database:
                 return None
         except Exception as e:
             print(e)
-    # Born to make history @LazyDeveloper ! => Remember this name forever <=
+    
 
     async def set_caption(self, id, caption):
         await self.col.update_one({'id': int(id)}, {'$set': {'caption': caption}})
